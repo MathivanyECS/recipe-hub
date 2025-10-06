@@ -5,33 +5,99 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Recipe Hub</title>
 <style>
-body{font-family: Arial, Helvetica, sans-serif; max-width:900px;margin:2rem auto;padding:1rem}
-nav a{margin-right:1rem}
-header{margin-bottom:1.5rem}
-.card{border:1px solid #ddd;padding:1rem;border-radius:8px}
+/* Base styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header and nav */
+header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: #0073e6;
+  color: #fff;
+}
+
+/* Card style */
+.card {
+  border: 1px solid #ddd;
+  padding: 1.2rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: #444;
+  margin-top: 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Responsive tweak */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+  nav a {
+    display: inline-block;
+    margin: 0.3rem;
+  }
+}
 </style>
 </head>
 <body>
 <header>
-<h1>Recipe Hub</h1>
-<p>Small practice site for Git & GitHub collaboration.</p>
-<nav>
-<a href="index.html">Home</a>
-<a href="appetizers.html">Appetizers</a>
-<a href="desserts.html">Desserts</a>
-</nav>
+  <h1>Recipe Hub</h1>
+  <p>Small practice site for Git & GitHub collaboration.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="appetizers.html">Appetizers</a>
+    <a href="desserts.html">Desserts</a>
+  </nav>
 </header>
 
-
 <main class="card">
-<h2>Welcome</h2>
-<p>This is a tiny site. Each page has 2 recipes. Use branches in Git to add new recipe pages.</p>
-<p>Follow the project instructions to create branches, open pull requests, and merge.</p>
+  <h2>Welcome</h2>
+  <p>This is a tiny site. Each page has 2 recipes. Use branches in Git to add new recipe pages.</p>
+  <p>Follow the project instructions to create branches, open pull requests, and merge.</p>
 </main>
 
-
-<footer style="margin-top:1.5rem;font-size:0.9rem;color:#555">
-<p>Made for a class exercise.</p>
+<footer>
+  <p>Made for a class exercise.</p>
 </footer>
 </body>
 </html>
