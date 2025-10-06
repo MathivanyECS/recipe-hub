@@ -18,12 +18,13 @@ body {
 
 /* Header and nav */
 header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
 h1 {
   color: #2c3e50;
+  margin-bottom: 0.3rem;
 }
 
 nav {
@@ -52,11 +53,18 @@ nav a:hover {
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
 }
 
 .card h2 {
   color: #444;
   margin-top: 0;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 /* Footer */
@@ -69,9 +77,6 @@ footer {
 
 /* Responsive tweak */
 @media (max-width: 600px) {
-  body {
-    padding: 1rem;
-  }
   nav a {
     display: inline-block;
     margin: 0.3rem;
@@ -81,8 +86,8 @@ footer {
 </head>
 <body>
 <header>
-  <h1>Recipe Hub</h1>
-  <p>Small practice site for Git & GitHub collaboration.</p>
+  <h1>🍲 Recipe Hub</h1>
+  <p>Delicious recipes made simple</p>
   <nav>
     <a href="index.html">Home</a>
     <a href="appetizers.html">Appetizers</a>
@@ -90,14 +95,22 @@ footer {
   </nav>
 </header>
 
-<main class="card">
-  <h2>Welcome</h2>
-  <p>This is a tiny site. Each page has 2 recipes. Use branches in Git to add new recipe pages.</p>
-  <p>Follow the project instructions to create branches, open pull requests, and merge.</p>
+<main>
+  <section class="card">
+    <h2>Featured Recipe: Spaghetti Carbonara</h2>
+    <img src="carbonara.jpg" alt="Spaghetti Carbonara">
+    <p>A creamy Italian pasta dish made with eggs, cheese, pancetta, and pepper. Perfect for a quick yet fancy dinner.</p>
+  </section>
+
+  <section class="card">
+    <h2>Featured Recipe: Chocolate Cake</h2>
+    <img src="chocolate-cake.jpg" alt="Chocolate Cake">
+    <p>Rich, moist, and topped with smooth chocolate frosting — the perfect dessert for any occasion.</p>
+  </section>
 </main>
 
 <footer>
-  <p>Made for a class exercise.</p>
+  <p>&copy; 2025 Recipe Hub | Made with ❤️ for food lovers</p>
 </footer>
 </body>
 </html>
