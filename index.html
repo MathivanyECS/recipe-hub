@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Recipe Hub</title>
+<title>FlavorCraft</title>
 <style>
 /* Reset */
 * {
@@ -14,75 +14,76 @@
 
 /* Body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fdeaea; /* light pink background */
-  color: #333;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0fdf9; /* mint background */
+  color: #2e2e2e;
 }
 
 /* Header */
 header {
-  background-color: #8b0000; /* dark red */
-  color: white;
-  padding: 1.5rem;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-/* Welcome card */
-.container {
-  max-width: 700px;
-  margin: 3rem auto;
-  background: white;
+  background-color: #2e2e2e; /* charcoal */
+  color: #f0fdf9;
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+  max-width: 800px;
+  margin: 4rem auto;
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
   text-align: center;
 }
 
-.container h2 {
-  color: #8b0000;
+.hero h2 {
+  font-size: 1.8rem;
+  color: #2e2e2e;
   margin-bottom: 1rem;
 }
 
-.container p {
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  color: #444;
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2.5rem;
 }
 
 /* Buttons */
-.btn {
+.button {
   display: inline-block;
   margin: 0.5rem;
-  padding: 0.7rem 1.2rem;
-  background-color: #8b0000;
+  padding: 0.9rem 1.6rem;
+  background-color: #00b894; /* teal green */
   color: white;
   border: none;
-  border-radius: 25px;
-  font-weight: bold;
-  cursor: pointer;
+  border-radius: 40px;
+  font-weight: 600;
   text-decoration: none;
-  transition: background 0.3s;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #a31a1a;
+.button:hover {
+  background-color: #019875;
 }
 </style>
 </head>
 <body>
 
 <header>
-  Welcome to Recipe Hub
+FlavorCraft
 </header>
 
 <main>
-  <div class="container">
-    <h2>Discover Delicious Recipes!</h2>
-    <p>Explore appetizers and desserts that you can cook and share with your friends and family.</p>
-    <a href="appetizers.html" class="btn">Appetizer Recipes</a>
-    <a href="desserts.html" class="btn">Dessert Recipes</a>
+  <div class="hero">
+    <h2>Elevate Your Culinary Game</h2>
+    <p>Browse handpicked recipes for irresistible appetizers and indulgent desserts. Perfect for any occasion.</p>
+    <a href="appetizers.html" class="button">View Appetizers</a>
+    <a href="desserts.html" class="button">View Desserts</a>
   </div>
 </main>
 
